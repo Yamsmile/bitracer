@@ -1,0 +1,4 @@
+{
+    "BitRacer.motorRun|block":"马达ID|%index速度|%PWM",
+    "BitRacer.irRead|block":"读取 IR|%address 感测器"
+}
