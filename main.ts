@@ -1,5 +1,4 @@
-const N76_ADDR = 0x10
-//% color="#AA278D" weight=100
+let N76_ADDR = 16
 namespace BitRacer{
     //% block
     //% blockId=sensor_readIR block="read IRsensor|%address"
