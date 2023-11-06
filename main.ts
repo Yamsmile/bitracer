@@ -1,10 +1,11 @@
-let N76_ADDR = 16
-namespace BitRacer{
+const N76_ADDR = 0x10
+//% color="#AA278D" weight=50
+namespace BitRacer {
     //% block
     //% blockId=sensor_readIR block="read IRsensor|%address"
-    //% addressmin=1 address.max=5 address.defl=1
+    //% address.min=1 address.max=5 address.defl=1
     export function irRead(address: number): number {
-        pins.i2cWriteNumber(N76_ADDR, address+2, NumberFormat.UInt8LE, false)
-        return pins.i2cReadNumber(16, NumberFormat.UInt16BE, false)
+        pins.i2cWriteNumber(N76_ADDR, address + 2, NumberFormat.UInt8LE, false)
+        return pins.i2cReadNumber(N76_ADDR, NumberFormat.UInt16BE, false)
     }
 }
